@@ -22,12 +22,10 @@
             let nameArray = [];
             wrapper.innerHTML = "";
             for (let i = 0; i < 10; i++) {
-                console.log(i)
                 let randomAnimal = animals[Math.floor(Math.random() * animals.length)];
                 let randomItem = items[Math.floor(Math.random() * items.length)];
-                nameArray = [randomAnimal, randomItem];
                 p = document.createElement("p");
-                p.innerHTML = "The " + nameArray[0] + " & " + nameArray[1];
+                p.innerHTML = "The " + randomAnimal + " & " + randomItem;
                 wrapper.appendChild(p);
             }
         }
